@@ -1,0 +1,69 @@
+.container{
+    width:90%
+}
+.signup{
+    padding-top: 20px;
+}
+
+.form{
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    background-color: white;
+}
+.form input{
+    width: 80%;
+    height: 50px;
+    margin: 20px auto 5px;
+    outline: 0;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    background-color: transparent;
+}
+.form button{
+    margin: 50px auto 30px;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    background-color: royalblue;
+    color: seashell;
+    cursor: pointer;
+}
+
+.error{
+    padding-left: 70px;
+    color: red;
+    float: left;
+    visibility: hidden;
+}
+
+.link{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width:426px) {
+    .form{
+        width: 80%;
+    }
+    .form input{
+        height: 30px;
+        margin: 10px auto 5px;
+        font-size: 15px;
+    }
+    .form button{
+        margin: 30px auto 20px;
+        font-size: 15px;
+        height: 40px;
+        width: 150px;
+    }
+}

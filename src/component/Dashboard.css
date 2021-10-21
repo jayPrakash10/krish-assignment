@@ -1,0 +1,130 @@
+.dashboard{
+    padding: 20px;
+    width: 90%;
+    min-height: 609px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.profile{
+    display: flex;
+    padding-left: 20%;
+    padding-bottom: 30px;
+    border-bottom: 1px solid lightskyblue;
+}
+input[type="file"] {
+    display: none;
+}
+  
+.custom-file-upload {
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    padding: 6px;
+    cursor: pointer;
+    background: linear-gradient(270deg, #3fa1a9, #79f1a4);
+    margin-bottom: 25px;
+    margin-right: 50px;
+}
+  
+.img-wrap{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+  
+.profile div{
+    font-weight: 500;
+    font-size: 50px;
+}
+.details{
+    display: flex;
+}
+
+.labelcontainer, .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.labelcontainer{
+    min-width: max-content;
+    width: 30%;
+    text-align: end;
+    padding-right: 10px;
+    text-transform: uppercase;
+    color: #676767;
+    font-weight: 500;
+}
+.info{
+    width: 50%;
+    padding-left: 10px;
+}
+.labelcontainer > *, .info > *{
+    margin: 20px 0;
+    height: 20px;
+    font-size: 20px;
+}
+.info *{
+    outline: 0;
+    background-color: transparent;
+    border: none;
+}
+.info input:nth-child(2){
+    max-width: fit-content;
+}
+
+.dashboard > div:last-child > button{
+    border: none;
+    height: 40px;
+    width: 60px;
+    font-size: 15px;
+    color: seashell;
+    background-color: lightgray;
+    border-radius: 5px;
+    position: relative;
+    left: 300px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:426px) {
+    .dashboard{
+        min-height: 507px;
+    }
+    .profile{
+        padding-left: 20px;
+    }
+    .profile img{
+        height: 50px;
+        width: 50px;
+    }
+    .profile div{
+        font-size: 25px;
+    }
+    .labelcontainer > *, .info > *{
+        margin: 10px 0;
+        height: 20px;
+        font-size: 15px;
+    }
+    .labelcontainer{
+        width: 20%;
+    }
+    .info{
+        width: 60%;
+    }
+    .dashboard > div:last-child > button{
+        margin-top: 20px;
+        position: relative;
+        left: 100px;
+    }
+}
